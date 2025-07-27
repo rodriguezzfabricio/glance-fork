@@ -1,0 +1,20 @@
+# Test configuration for Spotify widget
+pages:
+  - name: Spotify Test
+    columns:
+      - size: full
+        widgets:
+          # Basic Spotify widget  
+          - type: spotify
+            title: "New Releases"
+            client-id: "781a6dc1e8c949c0a6e398cb6d1ca23f"
+            client-secret: "a1b3659228c946fbabd79b068a6cdd86"
+            
+          # Advanced Spotify widget
+          - type: spotify
+            title: "Latest Albums (8 items)"
+            client-id: "781a6dc1e8c949c0a6e398cb6d1ca23f"
+            client-secret: "a1b3659228c946fbabd79b068a6cdd86"
+            country: "US"
+            limit: 8
+            cache: "2h"
